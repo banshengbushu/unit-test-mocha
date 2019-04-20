@@ -7,6 +7,7 @@ const min = require('../script/min')
             const result = min(input);
 
             result.should.equal(1);
+            done();
         });
 
         it('should return undefined when array is empty', done => {
@@ -14,6 +15,7 @@ const min = require('../script/min')
             const result = min(input);
 
             (result === undefined).should.be.true;
+            done();
         });
     });
 

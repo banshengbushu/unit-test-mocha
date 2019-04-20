@@ -7,6 +7,7 @@ const max = require('../script/max')
             const result = max(input);
 
             result.should.equal(1000);
+            done();
         });
 
         it('should return a string with input is an empty array', done => {
@@ -14,5 +15,6 @@ const max = require('../script/max')
             const result = max(input);
 
             result.should.equal('Input is an empty array');
+            done();
         });
     });
